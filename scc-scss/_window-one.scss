@@ -1,0 +1,60 @@
+@use "var";
+@use "prepared-code";
+
+input, select, button{
+    @extend %borderInput;
+}
+.under-text{
+    margin-top: 1%;
+    font: var.$textUnderEmail;
+    color: var.$textUnderEmailColour;
+}
+
+
+.header{
+    margin-bottom: 2.85%;
+}
+
+.window{
+    max-width: 570px;
+    width: 100%;
+    max-height: 590px;
+    height: 100%;
+}
+
+.inputs-one, .inputs-two{
+    max-width: 245px;
+    width: 100%;
+    max-height: 67px;
+    height: 100%;   
+}
+
+.inputs-one .label, .inputs-two .label{
+    margin-bottom: 1%;
+}
+
+.inputs{
+    @extend %displayFlexCenter;
+    justify-content: start;
+    gap: 12px;
+    margin-bottom: 2.857%;
+}
+
+.imput-email, .input-email input{
+    width: 100%;
+}
+
+.gender-selector{
+    display: inline-flex;
+    align-items: center;
+
+}
+
+.radio-button{
+    margin-right: 8px;
+}
+
+.button-confirm button{
+    padding: 8px 10px;
+    @extend %buttonTextColorSize;
+}

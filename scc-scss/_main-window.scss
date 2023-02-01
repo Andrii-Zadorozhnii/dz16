@@ -1,0 +1,17 @@
+@use "var";
+@use "prepared-code";
+
+body{
+    @extend %displayFlexCenter;
+}
+
+.main-window{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1440px;
+    width: 100%;
+    background-color: var.$main-bg;
+    padding: 9.3750% 7.8571%;
+}
