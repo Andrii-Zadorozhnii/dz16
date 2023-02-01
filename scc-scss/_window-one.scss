@@ -58,3 +58,21 @@ input, select, button{
     padding: 8px 10px;
     @extend %buttonTextColorSize;
 }
+
+.window{
+    background-color: var.$windowBg;
+    padding: 35px 34px 16px;
+}
+.text-terms{
+    max-width: 410px;
+    width: 100%;
+    text-align: center;
+}
+a:link{
+    color: var.$buttonColour;
+}
+
+.form-footer{
+    @extend %displayFlexCenter;
+    gap: 20px;
+}
