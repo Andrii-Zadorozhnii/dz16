@@ -96,6 +96,54 @@ a:link{
     font-weight: 500;
 }
 
+.gender-selector{
+    position: relative;
+    top: 0;
+}
+
+.gender-selector input{
+    position: relative;
+    top: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.gender-selector label{
+    margin-right: 10px;
+}
+
+input[type='radio']:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid var.$borderColor;
+}
+
+input[type='radio']:checked:after {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    transition: .1s all;
+    border: 6.5px solid blue;
+}
+
+
+
+
+
 // .gender-selector {
 //     display: flex;
 //     align-items: center;

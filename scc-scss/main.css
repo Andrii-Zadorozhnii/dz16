@@ -192,6 +192,50 @@ a:link {
   font-weight: 500;
 }
 
+.gender-selector {
+  position: relative;
+  top: 0;
+}
+
+.gender-selector input {
+  position: relative;
+  top: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.gender-selector label {
+  margin-right: 10px;
+}
+
+input[type=radio]:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: 0px;
+  left: 0px;
+  position: relative;
+  background-color: white;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 1px solid #E4E4E4;
+}
+
+input[type=radio]:checked:after {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  top: 0px;
+  left: 0px;
+  position: relative;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  transition: 0.1s all;
+  border: 6.5px solid blue;
+}
+
 body, .main-window, .inputs, .form-footer, .choose-picture, .garbage-bin {
   display: flex;
   align-items: center;
@@ -245,7 +289,7 @@ input, select, button, .chose-photo {
   box-shadow: none;
   width: 30px;
   height: 30px;
-  opacity: 1;
+  z-index: 1;
 }
 
 .garbage-bin img {
@@ -256,12 +300,9 @@ input, select, button, .chose-photo {
   margin: auto 0;
 }
 
-.chose-image::-moz-selection .garbage-bin {
-  opacity: 0;
-}
-
-.chose-image::selection .garbage-bin {
-  opacity: 0;
+.choose-picture {
+  position: relative;
+  top: 0;
 }
 
 .button-update {
@@ -381,7 +422,7 @@ input, select, button, .chose-photo {
   box-shadow: none;
   width: 30px;
   height: 30px;
-  opacity: 1;
+  z-index: 1;
 }
 .garbage-bin img {
   margin-left: 7px;
@@ -391,10 +432,7 @@ input, select, button, .chose-photo {
   margin: auto 0;
 }
 
-.chose-image::-moz-selection .garbage-bin {
-  opacity: 0;
-}
-
-.chose-image::selection .garbage-bin {
-  opacity: 0;
+.choose-picture {
+  position: relative;
+  top: 0;
 }/*# sourceMappingURL=main.css.map */

@@ -95,3 +95,7 @@ a:link {
 a:visited {
   color: blue;
 }
+
+input[type="text"], input[type="email"], input[type="phone"]{
+  padding-left: 10px;
+}
