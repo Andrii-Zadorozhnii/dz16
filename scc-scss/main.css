@@ -1,10 +1,11 @@
-.form-footer, .inputs, body {
+.garbage-bin, .choose-picture, .form-footer, .inputs, body, .main-window {
   display: flex;
   align-items: center;
   justify-content: center;
+  row-gap: 30px;
 }
 
-input, select, button {
+.chose-photo, input, select, button {
   border: 1px solid #E4E4E4;
   border-radius: 6px;
   max-width: 500px;
@@ -12,9 +13,15 @@ input, select, button {
   height: 38px;
 }
 
-.button-confirm button {
+.garbage-bin, .button-confirm button {
   background-color: #007BFF;
   color: #FFFFFF;
+}
+
+html {
+  font: 400 15px "Roboto", sans-serif;
+  color: #545454;
+  letter-spacing: -0.2px;
 }
 
 body {
@@ -22,22 +29,34 @@ body {
 }
 
 .main-window {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   gap: 30px;
   max-width: 1440px;
   width: 100%;
   padding: 9.375% 7.8571%;
+  flex-wrap: wrap;
 }
 
-.form-footer, .inputs, body {
+.window {
+  background-color: #FFFFFF;
+  padding: 35px 34px 16px;
+  max-width: 570px;
+  width: 100%;
+  height: 590px;
+}
+
+h1 {
+  font: 500 24px "Roboto", sans-serif;
+  color: black;
+}
+
+.garbage-bin, .choose-picture, .form-footer, .inputs, body, .main-window {
   display: flex;
   align-items: center;
   justify-content: center;
+  row-gap: 30px;
 }
 
-input, select, button {
+.chose-photo, input, select, button {
   border: 1px solid #E4E4E4;
   border-radius: 6px;
   max-width: 500px;
@@ -45,7 +64,7 @@ input, select, button {
   height: 38px;
 }
 
-.button-confirm button {
+.garbage-bin, .button-confirm button {
   background-color: #007BFF;
   color: #FFFFFF;
 }
@@ -69,13 +88,14 @@ button:hover {
   background-position: -200% 0, 0 0;
 }
 
-body, .inputs, .form-footer {
+.garbage-bin, .choose-picture, body, .main-window, .inputs, .form-footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  row-gap: 30px;
 }
 
-input, select, button {
+.chose-photo, input, select, button {
   border: 1px solid #E4E4E4;
   border-radius: 6px;
   max-width: 500px;
@@ -83,7 +103,7 @@ input, select, button {
   height: 38px;
 }
 
-.button-confirm button {
+.garbage-bin, .button-confirm button {
   background-color: #007BFF;
   color: #FFFFFF;
 }
@@ -96,13 +116,6 @@ input, select, button {
 
 .header {
   margin-bottom: 2.85%;
-}
-
-.window {
-  max-width: 570px;
-  width: 100%;
-  max-height: 590px;
-  height: 100%;
 }
 
 .inputs-one, .inputs-two {
@@ -139,21 +152,205 @@ input, select, button {
   padding: 8px 10px;
 }
 
-.window {
-  background-color: #FFFFFF;
-  padding: 35px 34px 16px;
-}
-
 .text-terms {
   max-width: 410px;
   width: 100%;
   text-align: center;
+  color: #969696;
 }
 
 a:link {
   color: #FFFFFF;
 }
 
+.under-text, .gender-selector, .inputs, .button-confirm, .text-terms, .hr-underline, .input-image, .button-confirm button {
+  margin-bottom: 21px;
+}
+
+.hr-underline {
+  border-top-color: re;
+}
+
 .form-footer {
   gap: 20px;
+}
+
+body, .main-window, .inputs, .form-footer, .choose-picture, .garbage-bin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+}
+
+input, select, button, .chose-photo {
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  max-width: 500px;
+  width: 100%;
+  height: 38px;
+}
+
+.button-confirm button, .garbage-bin {
+  background-color: #007BFF;
+  color: #FFFFFF;
+}
+
+.choose-picture {
+  margin-bottom: 9px;
+}
+
+.chose-image {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.chose-image + img {
+  opacity: 1;
+  width: 13px;
+  height: 13px;
+  margin-right: 9.33px;
+}
+
+.chose-photo {
+  position: relative;
+  width: 138px;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.garbage-bin {
+  background: #FFFFFF;
+  box-shadow: none;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+}
+
+.garbage-bin img {
+  margin-left: 7px;
+}
+
+.picture-block {
+  margin: auto 0;
+}
+
+.under-text {
+  margin-bottom: 0;
+}
+
+.chose-image::-moz-selection .garbage-bin {
+  opacity: 0;
+}
+
+.chose-image::selection .garbage-bin {
+  opacity: 0;
+}
+
+.button-update {
+  max-width: 150px;
+  width: 100%;
+}
+
+.chose-photo {
+  max-width: 138px;
+  width: 100%;
+  max-height: 38px;
+  height: 100%;
+}
+
+.flex {
+  width: 100%;
+}
+
+.image-area {
+  display: flex;
+  max-height: 80px;
+  height: 100%;
+}
+
+.account-image img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  opacity: 1;
+}
+
+body, .main-window, .inputs, .form-footer, .choose-picture, .garbage-bin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+}
+
+input, select, button, .chose-photo {
+  border: 1px solid #E4E4E4;
+  border-radius: 6px;
+  max-width: 500px;
+  width: 100%;
+  height: 38px;
+}
+
+.button-confirm button, .garbage-bin {
+  background-color: #007BFF;
+  color: #FFFFFF;
+}
+
+.choose-picture {
+  margin-bottom: 9px;
+}
+
+.chose-image {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.chose-image + img {
+  opacity: 1;
+  width: 13px;
+  height: 13px;
+  margin-right: 9.33px;
+}
+
+.chose-photo {
+  position: relative;
+  width: 138px;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.garbage-bin {
+  background: #FFFFFF;
+  box-shadow: none;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+}
+.garbage-bin img {
+  margin-left: 7px;
+}
+
+.picture-block {
+  margin: auto 0;
+}
+
+.under-text {
+  margin-bottom: 0;
+}
+
+.chose-image::-moz-selection .garbage-bin {
+  opacity: 0;
+}
+
+.chose-image::selection .garbage-bin {
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */

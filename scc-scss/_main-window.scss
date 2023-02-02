@@ -1,19 +1,37 @@
 @use "var";
 @use "prepared-code";
 
+html{
+    font: var.$textMainSize;
+    color: var.$textMainColor;
+    letter-spacing: -0.2px;
+}
+
+
 body{
     @extend %displayFlexCenter;
     background-color: var.$mainBg;
 }
 
-
-
 .main-window{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend %displayFlexCenter;
     gap: 30px;
     max-width: 1440px;
     width: 100%;
     padding: 9.3750% 7.8571%;
+    flex-wrap: wrap;
 }
+
+.window{
+    background-color: var.$windowBg;
+    padding: 35px 34px 16px;
+    max-width: 570px;
+    width: 100%;
+    height: 590px;
+}
+
+h1{
+    font: var.$textHeaderSize;
+    color: black;
+}
+

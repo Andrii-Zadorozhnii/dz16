@@ -4,6 +4,7 @@
 input, select, button{
     @extend %borderInput;
 }
+
 .under-text{
     margin-top: 1%;
     font: var.$textUnderEmail;
@@ -15,12 +16,7 @@ input, select, button{
     margin-bottom: 2.85%;
 }
 
-.window{
-    max-width: 570px;
-    width: 100%;
-    max-height: 590px;
-    height: 100%;
-}
+
 
 .inputs-one, .inputs-two{
     max-width: 245px;
@@ -59,17 +55,22 @@ input, select, button{
     @extend %buttonTextColorSize;
 }
 
-.window{
-    background-color: var.$windowBg;
-    padding: 35px 34px 16px;
-}
+
 .text-terms{
     max-width: 410px;
     width: 100%;
     text-align: center;
+    color: var.$textUnderEmailColour;
 }
 a:link{
     color: var.$buttonColour;
+}
+.under-text, .gender-selector,.inputs, .button-confirm,.text-terms,.hr-underline,.input-image, .button-confirm button{
+    margin-bottom: var.$marginBottom21px;
+}
+
+.hr-underline{
+    border-top-color: re;
 }
 
 .form-footer{
