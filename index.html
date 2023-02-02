@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./scc-scss/reset.css" />
     <link rel="stylesheet" href="./scc-scss/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Homework #16</title>
   </head>
   <body>
@@ -35,7 +41,7 @@
               type="radio"
               id="male"
               name="gender"
-              value="dewey"
+              value="male"
               class="radio-button"
             />
             <label for="female">Male</label>
@@ -43,7 +49,7 @@
               type="radio"
               id="female"
               name="gender"
-              value="louie"
+              value="female"
               class="radio-button"
             />
             <label for="female">Female</label>
@@ -53,7 +59,7 @@
               <p class="label">Country</p>
               <select name="country" class="form-control" id="country">
                 <option value="0" label="Select" selected="selected">
-                  Select
+                  <span class="gray-color">Select</span>
                 </option>
                 <optgroup id="country-optgroup-Africa" label="Africa">
                   <option value="DZ" label="Algeria">Algeria</option>
@@ -471,7 +477,9 @@
             <div class="image-area">
               <div class="account-image">
                 <figure>
-                  <img id="image" />
+                  <div class="absolute-image"></div>
+                  <img id="image">
+                  <img class="relative-img" src="./images/svg/jpg/B2BF0386-10D3-48A3-BBDA-82DFAB698806_1_201_a.jpeg" alt="icon">
                 </figure>
               </div>
               <div class="picture-block">
@@ -488,9 +496,14 @@
                       alt="icon-camera"
                     />
                   </div>
-                  <button class="garbage-bin" id="cancel-btn"><img src="./images/svg/1. Buttons/1. Small/4. Icons/🔹 Icon Color.svg" alt="garbage-bin"></button>
+                  <button class="garbage-bin" id="cancel-btn">
+                    <img
+                      src="./images/svg/1. Buttons/1. Small/4. Icons/🔹 Icon Color.svg"
+                      alt="garbage-bin"
+                    />
+                  </button>
                 </div>
-                <p class="under-text">Up to 1 MB (300x300 px)</p>
+                <p class="under-text text-2">Up to 1 MB (300x300 px)</p>
               </div>
             </div>
           </div>

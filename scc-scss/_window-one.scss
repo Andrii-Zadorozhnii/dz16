@@ -11,6 +11,13 @@ input, select, button{
     color: var.$textUnderEmailColour;
 }
 
+select{
+    font: var.$textUnderEmail;
+    color: var.$textUnderEmailColour;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
 
 .header{
     margin-bottom: 2.85%;
@@ -61,6 +68,7 @@ input, select, button{
     width: 100%;
     text-align: center;
     color: var.$textUnderEmailColour;
+    font-weight: 400;
 }
 a:link{
     color: var.$buttonColour;
@@ -70,10 +78,56 @@ a:link{
 }
 
 .hr-underline{
-    border-top-color: re;
+    border-color: #e4e4e4;
 }
 
 .form-footer{
     @extend %displayFlexCenter;
     gap: 20px;
 }
+
+.gender-selector{
+    max-height: 20px;
+    height: 100%;
+}
+
+
+.form-footer a{
+    font-weight: 500;
+}
+
+// .gender-selector {
+//     display: flex;
+//     align-items: center;
+//     margin-right: 20px;
+// }
+
+// .gender-selector{
+//     position: relative;
+// }
+
+// .gender-selector input{
+//     position: absolute;
+//     opacity: 0;
+// }
+
+// .gender-selector label{
+//     padding-left: 28px;
+//     box-sizing: border-box;
+// }
+
+// .gender-selector::before{
+//     position: absolute;
+//     content: '';
+//     top: 0;
+//     left: 0;
+//     width: 20px;
+//     height: 20px;
+//     border-radius: 50%;
+//     border: 1px solid #E4E4E4;
+//     transition: .2s all;
+// }
+
+// .gender-selector input:checked + label::before {
+//     border: 6px solid #007BFF;
+// }
